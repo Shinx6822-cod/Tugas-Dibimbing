@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="name">Welcome</h3>
+    <h1>Un Clicked</h1>
+    <script>
+      document.getElementById("name").onclick = () => {
+        alert("CLICKED");
+      };
+
+      let h1 = document.getElementsByTagName("h1")[0];
+
+      h1.onclick = () => {
+        h1.innerHTML = h1.innerHTML == "Un Clicked" ? "Clicked" : "Un Clicked";
+      };
+
+      h1.onmouseout = () => {
+        alert("Mouse Over");
+      };
+    </script>
+  </body>
+</html>

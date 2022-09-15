@@ -1,0 +1,62 @@
+body {
+  background-color: lightblue;
+}
+
+.btn-group{
+  text-align: center;
+}
+.navbar-toggler-icon{
+  height: 10px;
+  width: 10px;
+  font-size: 10px;
+}
+.nav-link {
+  border: 1px solid black;
+  width: 100px;
+  border-radius: 5px;
+  margin: 5px;
+  text-decoration: none; 
+  color: white; 
+}
+.nav-link:hover{
+  color: white;
+}
+.alert{
+  text-align: center;
+}
+/* daftar Drama,Movie,Anime */
+.card {
+  padding: 2px;
+  border-radius: 5px;
+}
+.card-body{
+  text-align: center;
+}
+
+.card-link {
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgb(25, 185, 194);
+  padding: 5px;
+  color: black;
+  transition: 0.5s;
+}
+
+.footer{
+  text-align: center;
+}
+.footer-link {
+  text-decoration: none;
+  text-align: center;
+  color: salmon;
+  border: 2px solid;
+  border-radius: 5px;
+  padding: 4px;
+  background-color: aqua;
+  font-size: 20px;
+  transition: .5s ;
+}
+.form {
+  width: 50%;
+}

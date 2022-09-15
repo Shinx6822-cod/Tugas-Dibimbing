@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git</title>
+  </head>
+  <body>
+    <p>Version control system</p>
+    <p>3 sistem version control:</p>
+    <div>
+      <ul>
+        <li>local vesion control</li>
+        <li>centralized version control :Subversion</li>
+        <li>
+          distribution version control : Git dll
+          <p>dapat memanage project besar</p>
+        </li>
+      </ul>
+      
+      <h2>Workflow</h2>
+      <p>modified,staged, dan commited</p>
+      
+      <h2>Three Section</h2>
+      <p>Working Directory, Staging area, repository</p>
+ 
+      <h2>Hash</h2>
+      <p>Snapshot</p>
+      <p>algoritma yang digunakan SHA-1</p>
+ 
+      <h2>Menambah file</h2>
+      <p>git add (nama file) / .(semua file) >>>> git commit -m "Comment"</p>
+ 
+      <h2>Mengubah File</h2>
+      <p>git diff</p>
+      <p>git add (nama file) >>>> git commit -m "Comment"</p>
+ 
+      <h2>Menghapus Data</h2>
+      <p>file dihpus manual kemudian perlu di</p>
+      <p>git add (nama file) >>>> git commit -m "Comment"</p>
+ 
+      <h2>Membatalkan perubahan file</h2>
+      <p>git clean -f</p>
+      <p>Note : harus ada di working directory</p>
+ 
+      <h2>Membatalkan perubahan file dan Membatalkan penghapusan file</h2>
+      <p>git restore (nama file)</p>
+      <p>Note : harus ada di working directory</p>
+
+      <h2>Membatalkan dari Staging Index</h2>
+      1. balikkan ke working directory dulu
+      <p>git restore --staged (nama file)</p>
+      2. kemudian pakai seperti yang sebelumnya.
+      
+      <h2>Membatalkan yg sudah dicommit</h2>
+      <p>Roolback atau Revert commit</p>
+      
+      <h2>Commit log</h2>
+      Untuk melihat history commit
+      <p>git log</p>
+      Untuk Log sederhana
+      <p>git log --oneline</p>
+      
+      <h2>Graph</h2>
+      <p>git log --oneline --graph</p>
+      
+      <h2>Melihat detail commit</h2>
+      <p>git show (number hash)</p>
+      
+      <h2>Compare commit</h2>
+      <p>git diff (number hash1) (number hash2)</p>
+      
+      <h2>Difftool</h2>
+      <p>gif difftool (hash1) (hash2)</p>
+      
+      <h2>Rename file</h2>
+      
+      <h2>Reset commit</h2>
+      <p>git reset (mode) hash</p>
+      <p>mode : --soft, --mixed, --hard</p>
+    </div>
+  </body>
+</html>
+
+4a14ab8 (HEAD -> main) Perubahan baru.html
+1469e7a Modif Day 1
+ff34666 Git ignore
+3073e9f Perubahan yang belum tau
+0831e63 Mengubah file new.html
+1e80efe Merge branch 'dev'
+29f3538 Mengubah file baru
+fc42fe3 Mengubah file baru
+fe3aba0 Perubahan Data
+e42c3a9 Merge branch 'new'
+a693e47 Menambahkan file new
+2b57d1b menambahkan file baru
+bdef4ab Menambahkan data index.html       
+cd1df19 Mengembalikan style.css
+4172bf1 melakukan perubahan index.html, menghapus style.css dan menambahkan script.js
+b035a9e Mengubah file index dan menambahkan file style.css
+0ea194f Menambahkan file index.html
+ceee027 Update1
+5e315c5 Add files via upload
+688e8a4 none
+9a4ff9a first commit
+63c8514 first commit
+2151700 first commit
+
+git reset --mixed bdef4ab

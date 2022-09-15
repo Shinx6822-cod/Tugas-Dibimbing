@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="name">Fiqri</h3>
+    <h1>Test</h1>
+    <h1>Un Clicked</h1>
+    <script>
+      let elementName = document.getElementById("name");
+console.log(document);
+      setTimeout(() => {
+        document.getElementsByTagName("h1")[0].innerHTML = "Testttttt";
+        document.getElementsByTagName("h1")[1].innerHTML = "Clicked";
+      }, 3000);
+      // function changeValueName() {
+      //   if (elementName.innerHTML == "Fiqri") {
+      //     elementName.innerHTML = "Sini";
+      //   } else {
+      //     elementName.innerHTML = "Fiqri";
+      //   }
+      // }
+
+      function changeButtonDesc() {
+        let btnElement = document.getElementById("btn");
+        if (btnElement.innerHTML == "LOGIN") {
+          btnElement.innerHTML = "LOGOUT";
+        } else {
+          btnElement.innerHTML = "LOGIN";
+        }
+        if (elementName.innerHTML == "Fiqri") {
+          elementName.innerHTML = "Sini";
+        } else {
+          elementName.innerHTML = "Fiqri";
+        }
+      }
+    </script>
+    <button id="btn" onclick="changeButtonDesc()">LOGIN</button>
+  </body>
+</html>

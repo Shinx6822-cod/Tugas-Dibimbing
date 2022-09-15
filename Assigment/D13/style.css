@@ -1,0 +1,21 @@
+body {
+  background-color: aqua;
+}
+.form {
+}
+.formSignUp {
+  text-align: center;
+  margin-right: 10px;
+}
+
+.textDecoration {
+  text-decoration: none;
+}
+
+.img-responsive {
+  margin-left: 80px;
+}
+
+.footer {
+  border: 5px solid black;
+}

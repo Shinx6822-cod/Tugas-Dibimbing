@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // create element
+      let p = document.createElement("p");
+      p.innerHTML = "Pratamaaaa";
+      p.style.background = "red";
+
+      setTimeout(() => {
+        // append element to page
+        document.body.appendChild(p);
+      }, 4000);
+      setTimeout(() => {
+        // remove element
+        document.body.removeChild(h);
+      }, 12000);
+
+      let h = document.createElement("h1");
+      h.innerHTML = "Fiqriiiiii";
+
+      setTimeout(() => {
+        // replace element
+        document.body.replaceChild(h, p);
+      }, 10000);
+      
+      // document.write("Test Write");
+    </script>
+  </body>
+</html>

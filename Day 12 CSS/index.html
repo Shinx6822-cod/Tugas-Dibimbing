@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 12 CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* class selector */
+      .colorShopee {
+        background-color: coral;
+        color: white;
+        padding: 10px;
+        height: 124px;
+        width: auto;
+        text-align: center;
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+      }
+      .colorToped {
+        text-shadow: 12px;
+        text-rendering: geometricPrecision;
+      }
+      /* tag selector */
+      span {
+        color: green;
+      }
+      /* id selector */
+      #colorBlibli {
+        color: grey;
+        text-align: right;
+        background-color: aqua;
+        height: 120px;
+      }
+      /* attribute selector */
+      input[type="text"] {
+        background-color: cornflowerblue;
+        border: 15px red;
+      }
+      /* Universal Selector */
+      * {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CSS Inline -->
+    <h1
+      style="
+        background-color: red;
+        padding: 10;
+        color: purple;
+        font-size: 50;
+        font-family: 'Courier New', Courier, monospace;
+      "
+    >
+      Hello World
+    </h1>
+    <!-- CSS Internal -->
+    <h2 class="colorShopee">
+      dibimbing
+      <span style="color: blue">.</span>
+      <span>id</span>
+    </h2>
+    <!-- CSS External -->
+    <h2 class="colorToped">
+      <marquee
+        behavior=""
+        direction="right"
+        style="
+          background-color: red;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+            'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        "
+        >dibimbing.id</marquee
+      >
+    </h2>
+    <h2 id="colorBlibli">dibimbing.id</h2>
+    <input type="text" />
+    <input type="password" />
+  </body>
+</html>
