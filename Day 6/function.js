@@ -83,5 +83,3 @@ function sayName(name){
 // calling the function
 setTimeout(greet,2000);
 sayName('John');
-
-// Saya baru mencoba penambahan codingan ini
