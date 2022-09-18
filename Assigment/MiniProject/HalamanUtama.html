@@ -17,13 +17,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <!-- Internal CSS -->
-    <style>
-      @media only screen and (max-width: 576px) {
 
-      }
-      
-    </style>
     <!--External CSS -->
     <link rel="stylesheet" href="color.css" />
   </head>
@@ -83,12 +77,130 @@
         aria-current="page"
         >Dis Star</a
       >
-      <a href="Serial.html " class="nav-link btn btn-primary">Serial</a>
-      <a href="Film.html" class="nav-link btn btn-primary">Film</a>
-      <a href="Lokal.html" class="nav-link btn btn-primary">Lokal</a>
-      <a href="Login.html" class="nav-link btn btn-primary" target="_self"
-        >Masuk</a
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Serial</a>
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Film</a>
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Lokal</a>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop5"
+        style="padding: 1"
       >
+        Masuk
+      </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop5"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Masuk</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-body">
+                <div class="modal-content-data">
+                  <div class="pnl-manager">
+                    <div class="login-container">
+                      <div class="heading">
+                        <span class="heading-text"
+                          >Login using your mobile number</span
+                        ><br />
+                        <span class="subheading-text"></span><br />
+                      </div>
+                      <div class="phone-number-container">
+                        <div class="phone-input">
+                          <span class="country-code">+62</span>
+                          <div class="form-group material-input">
+                            <input
+                              maxlength="100"
+                              type="text"
+                              id="phoneNo"
+                              autocomplete="off"
+                              required=""
+                              name="phoneNo"
+                              class="form-control"
+                              tabindex=""
+                              pattern="[0-9]*"
+                              inputmode="numeric"
+                              placeholder="Masukkan nomor ponsel Anda"
+                              value=""
+                            />
+                            <div
+                              class="page-loader loader"
+                              style="display: none"
+                            ></div>
+                            <p class="info"></p>
+                          </div>
+                        </div>
+                        <button type="button" class="submit-button">
+                          <a
+                            href="Pembaharuan.html"
+                            style="text-decoration: none; color: black"
+                          >
+                            Lanjutkan</a
+                          >
+                        </button>
+                        <div class="attest-message">
+                          <span class="attest-message-text"
+                            >Dengan mengeklik melanjutkan, Anda menyetujui
+                            <a
+                              href="SyaratPenggunaan.html"
+                              target="`_blank`"
+                              rel="`noopener"
+                              noreferrer`=""
+                            >
+                              Persyaratan penggunaan
+                            </a>
+                            kami dan menyatakan bahwa Anda telah membaca
+                            <a
+                              href="Pembaharuan.html"
+                              target="`_blank`"
+                              rel="`noopener"
+                              noreferrer`=""
+                            >
+                              Kebijakan privasi
+                            </a>
+                            kami.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="close-btn"
+                  id="modal-close-icon"
+                  role="presentation"
+                ></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
     <div>
       <!-- Breadcrumb -->
@@ -129,22 +241,31 @@
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
-        <!-- <button
+        <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
           aria-label="Slide 3"
-        ></button> -->
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="BigMouth.jpg" class="d-block w-100" alt="..." />
+          <img src="asset/BigMouth.jpg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="BTIMFL.jpg" class="d-block w-100" alt="..." />
+          <img src="asset/BTIMFL.jpg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
-          <img src="MadeinABYSS.jpg" class="d-block w-100" alt="..." />
+          <img src="asset/MadeinABYSS.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="asset/DoctorLawyer.jpg" class="d-block w-100" alt="..." />
         </div>
       </div>
       <button
@@ -170,41 +291,138 @@
     <div class="container-fluid">
       <div class="row">
         <div class="card col-3">
-          <img src="BigMouth.jpg" class="img-fluid" alt="..." />
+          <img src="asset/BigMouth.jpg" class="img-fluid" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Big Mouth</h5>
             <h6 class="card-subtitle mb-2 text-muted">29 Juli 2022</h6>
             <!-- Detail ada didalam ini -->
-            <a href="#" class="card-link">Detail</a>
-            <!-- <div class="card" style="width: 18rem">
-          <img src="BigMouth.jpg" class="card-img-top" alt="..." />
-          <div class="card-body">
-            <p class="card-text">
-              Seorang pengacara terlibat dalam kasus pembunuhan dan berjuang
-              melawan konspirasi besar demi bertahan hidup.
-            </p>
-          </div>
-        </div> -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Big Mouth
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="asset/BigMouth.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p>
+                      Seorang pengacara terlibat dalam kasus pembunuhan dan
+                      berjuang melawan konspirasi besar demi bertahan hidup.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Trailer -->
             <a href="https://youtu.be/l-MqNftE0BY" class="card-link">Trailer</a>
           </div>
         </div>
 
         <div class="card col-3">
-          <img src="BTIMFL.jpg" class="card-img-top" alt="..." />
+          <img src="asset/BTIMFL.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Because This Is My First Life</h5>
             <h6 class="card-subtitle mb-2 text-muted">9 Okt 2017</h6>
             <!-- Detail ada didalam ini -->
-            <a href="#" class="card-link">Detail</a>
-            <!-- <div class="card">
-            <img src="BTIMFL.jpg" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <p class="card-text">
-                Drama komedi romantis tentang dua orang asing yang tinggal bersama untuk memenuhi kebutuhan dan tuntutan masing-masing.
-              </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop1"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop1"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Because This is My First Life
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="asset/BTIMFL.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Drama komedi romantis tentang dua orang asing yang tinggal
+                      bersama untuk memenuhi kebutuhan dan tuntutan
+                      masing-masing.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div> -->
+
             <!-- Trailer -->
             <a
               href="https://www.hotstar.com/id/because-this-is-my-first-life-trailer/1260111103"
@@ -214,22 +432,71 @@
           </div>
         </div>
         <div class="card col-3">
-          <img src="MadeinABYSS.jpg" class="card-img-top" alt="..." />
+          <img src="asset/MadeinABYSS.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
             <h5 class="card-title">Made in ABYSS</h5>
             <h6 class="card-subtitle mb-2 text-muted">6 Jul 2022</h6>
             <!-- Detail ada didalam ini -->
-            <a href="#" class="card-link">Detail</a>
-            <!-- <div class="card">
-              <img src="MadeinABYSS.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Episode Baru Setiap hari rabu. Riko adalah yatim piatu dari
-                  Orth, kota di dekat Abyss. Mimpinya adalah menjadi Penjarah
-                  Gua legendaris. Suatu hari, dia bertemu anak robot di Abyss.
-                </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop2"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop2"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Made In ABYSS
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="asset/MadeinABYSS.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+
+                    <p class="card-text">
+                      Episode Baru Setiap hari rabu. Riko adalah yatim piatu
+                      dari Orth, kota di dekat Abyss. Mimpinya adalah menjadi
+                      Penjarah Gua legendaris. Suatu hari, dia bertemu anak
+                      robot di Abyss.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div> -->
+            </div>
+
             <!-- Trailer -->
             <a
               href="https://www.hotstar.com/id/made-in-abyss-trailer/1260110283"
@@ -239,24 +506,352 @@
           </div>
         </div>
         <div class="card col-3">
-          <img src="Link.jpg" class="card-img-top" alt="..." />
+          <img src="asset/Link.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Made in ABYSS</h5>
+            <h5 class="card-title">Link</h5>
             <h6 class="card-subtitle mb-2 text-muted">6 Jul 2022</h6>
             <!-- Detail ada didalam ini -->
-            <a href="#" class="card-link">Detail</a>
-            <!-- <div class="card">
-              <img src="MadeinABYSS.jpg" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <p class="card-text">
-                  Sebuah kisah romantis fantasi tentanf seorang pria dan wanita
-                  tak dikenal yang emosinya saling terkait.
-                </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop3"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop3"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Made In ABYSS
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="asset/Link.jpg" class="card-img-top" alt="..." />
+                    <p class="card-text">
+                      Sebuah kisah romantis fantasi tentanf seorang pria dan
+                      wanita tak dikenal yang emosinya saling terkait.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div> -->
+            </div>
+
             <!-- Trailer -->
             <a
               href="https://www.hotstar.com/id/link-eat-love-kill-trailer/1260104245"
+              class="card-link"
+              >Trailer</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card col-3">
+          <img src="asset/Snowdrop.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Snowdrop</h5>
+            <h6 class="card-subtitle mb-2 text-muted">18 Dec 2021</h6>
+            <!-- Detail ada didalam ini -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop4"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop4"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Snowdrop
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="asset/Snowdrop.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Sebuah kisah cinta abadi melawan era 1987 di Seoul
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer -->
+            <a
+              href="https://www.hotstar.com/id/snowdrop-trailer/1260075815"
+              class="card-link"
+              >Trailer</a
+            >
+          </div>
+        </div>
+
+        <div class="card col-3">
+          <img src="asset/DoctorLawyer.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Doctor Lawyer</h5>
+            <h6 class="card-subtitle mb-2 text-muted">3 Jun 2022</h6>
+            <!-- Detail ada didalam ini -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop6"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop6"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Doctor Lawyer
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="asset/DoctorLawyer.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Sebuah drama bertema medis dan hukum tentang seorang ahli
+                      bedah yang menjadi pengacara setelah kasus bedah
+                      malapraktik.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer -->
+            <a
+              href="https://www.hotstar.com/id/doctor-lawyer-trailer/1260103376"
+              class="card-link"
+              >Trailer</a
+            >
+          </div>
+        </div>
+        <div class="card col-3">
+          <img src="asset/SkyCastle.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Sky Castle</h5>
+            <h6 class="card-subtitle mb-2 text-muted">23 Nov 2018</h6>
+            <!-- Detail ada didalam ini -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop8"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop8"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                      Sky Castle
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="asset/SkyCastle.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Serial drama yang mengisahkan para istri keluarga kaya
+                      dikorea dan hasrat kesuksesan mereka.
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer -->
+            <a
+              href="https://www.hotstar.com/id/sky-castle-trailer/1260081403"
+              class="card-link"
+              >Trailer</a
+            >
+          </div>
+        </div>
+        <div class="card col-3">
+          <img src="asset/Adamas.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Adamas</h5>
+            <h6 class="card-subtitle mb-2 text-muted">27 Jul 2022</h6>
+            <!-- Detail ada didalam ini -->
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop7"
+              style="padding: 1"
+            >
+              Detail
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop7"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Adamas</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <img
+                      src="asset/Adamas.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <p class="card-text">
+                      Saudara kembar berjuang membersihkan nama ayah mereka
+                      dalam kasus pembunuhan
+                    </p>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trailer -->
+            <a
+              href="https://www.hotstar.com/id/adamas-trailer/1260107679"
               class="card-link"
               >Trailer</a
             >

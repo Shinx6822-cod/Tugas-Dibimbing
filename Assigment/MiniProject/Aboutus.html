@@ -4,39 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mini Project</title>
-
-    <style>
-      .nav-link {
-        border: 1px solid black;
-        width: 100px;
-        border-radius: 5px;
-        margin: 5px;
-        /* text-decoration: none; */
-        /* color: white; */
-      }
-      .card {
-        margin: 10px;
-      }
-      .card-link {
-        text-decoration: none;
-        border: 2px solid white;
-        border-radius: 5px;
-        background-color: rgb(25, 185, 194);
-        padding: 5px;
-        color: black;
-        transition: 0.5s;
-      }
-
-      /* .nama span {
-        display: inline-block;
-        transition: 0.3s;
-        cursor: pointer;
-      }
-      .nama span:hover {
-        transform: scale(2) translateY(-20px); */
-      /* } */
-    </style>
+    <title>About us</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -46,19 +14,185 @@
     <link rel="stylesheet" href="color.css" />
   </head>
   <body>
-    <nav>
-      <a href="HalamanUtama.html" class="nav-link">Dis Star</a>
-      <a href="Serial.html " class="nav-link">Serial</a>
-      <a href="Film.html" class="nav-link">Film</a>
-      <a href="Lokal.html" class="nav-link">Lokal</a>
-      <a href="Login.html" class="nav-link">Masuk</a>
-    </nav>
-     <!-- Breadcrumb -->
-     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="HalamanUtama.html">Dis Star</a></li>
-        <li class="breadcrumb-item active" aria-current="page">About us</li>
-      </ol>
+    <!-- Navigasi Search -->
+    <nav class="btn-group">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-evenly"
+        id="navbarSupportedContent"
+      >
+        <!-- search form -->
+        <form class="d-flex width_80" role="search">
+          <div class="input-group mb-3 input_search">
+            <input
+              type="text"
+              class="form-control border_none_radius"
+              placeholder="Search for anything"
+              aria-label="Search for anything"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary border_none_radius"
+              type="button"
+              id="button-addon2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- Navigasi -->
+      <a
+        href="HalamanUtama.html"
+        class="nav-link btn-primary active"
+        aria-current="page"
+        >Dis Star</a
+      >
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Serial</a>
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Film</a>
+      <a href="Pembaharuan.html" class="nav-link btn btn-primary">Lokal</a>
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#staticBackdrop"
+        style="padding: 1"
+      >
+        Masuk
+      </button>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="staticBackdrop"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        tabindex="-1"
+        aria-labelledby="staticBackdropLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Masuk</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <div class="modal-body">
+                <div class="modal-content-data">
+                  <div class="pnl-manager">
+                    <div class="login-container">
+                      <div class="heading">
+                        <span class="heading-text"
+                          >Login using your mobile number</span
+                        ><br />
+                        <span class="subheading-text"></span><br />
+                      </div>
+                      <div class="phone-number-container">
+                        <div class="phone-input">
+                          <span class="country-code">+62</span>
+                          <div class="form-group material-input">
+                            <input
+                              maxlength="100"
+                              type="text"
+                              id="phoneNo"
+                              autocomplete="off"
+                              required=""
+                              name="phoneNo"
+                              class="form-control"
+                              tabindex=""
+                              pattern="[0-9]*"
+                              inputmode="numeric"
+                              placeholder="Masukkan nomor ponsel Anda"
+                              value=""
+                            />
+                            <div
+                              class="page-loader loader"
+                              style="display: none"
+                            ></div>
+                            <p class="info"></p>
+                          </div>
+                        </div>
+                        <button type="button" class="submit-button">
+                          <a
+                            href="Pembaharuan.html"
+                            style="text-decoration: none; color: black"
+                          >
+                            Lanjutkan</a
+                          >
+                        </button>
+                        <div class="attest-message">
+                          <span class="attest-message-text"
+                            >Dengan mengeklik melanjutkan, Anda menyetujui
+                            <a
+                              href="SyaratPenggunaan.html"
+                              target="`_blank`"
+                              rel="`noopener"
+                              noreferrer`=""
+                            >
+                              Persyaratan penggunaan
+                            </a>
+                            kami dan menyatakan bahwa Anda telah membaca
+                            <a
+                              href="Pembaharuan.html"
+                              target="`_blank`"
+                              rel="`noopener"
+                              noreferrer`=""
+                            >
+                              Kebijakan privasi
+                            </a>
+                            kami.
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="close-btn"
+                  id="modal-close-icon"
+                  role="presentation"
+                ></div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+              close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
     <h3>Tentang Kami</h3>
     <p>
@@ -111,35 +245,35 @@
       mengunduh dan berlangganan di aplikasi Dis Star kami.
     </p>
     <footer>
-     <a href="Aboutus.html" class="footer-link">About Us</a>
-     <a href="SyaratPenggunaan.html" class="footer-link">Syarat Penggunaan</a>
-     <a href="Pembaharuan.html" class="footer-link">Kebijakan Privasi(Baru)</a>
-     <a href="Pembaharuan.html" class="footer-link">Tanya Jawab</a>
-     <form action="Pembaharuan.html">
-     <div class="mb-2 mt-2 form">
-       <label for="exampleFormControlInput1" class="form-label"
-         >Email address</label
-       >
-       <input
-         type="email"
-         class="form-control"
-         id="exampleFormControlInput1"
-         placeholder="name@example.com"
-       />
-     </div>
-     
-     <div class="mb-2 form">
-       <label for="exampleFormControlTextarea1" class="form-label"
-         >Feedback/Comment</label
-       >
-       <textarea
-         class="form-control"
-         id="exampleFormControlTextarea1"
-         rows="3"
-       ></textarea>
-       <input type="submit" value="submit">
-     </div>
-   </form>
-   </footer>
+      <a href="Aboutus.html" class="footer-link">About Us</a>
+      <a href="SyaratPenggunaan.html" class="footer-link">Syarat Penggunaan</a>
+      <a href="Pembaharuan.html" class="footer-link">Kebijakan Privasi(Baru)</a>
+      <a href="Pembaharuan.html" class="footer-link">Tanya Jawab</a>
+      <form action="Pembaharuan.html">
+        <div class="mb-2 mt-2 form">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+
+        <div class="mb-2 form">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Feedback/Comment</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="3"
+          ></textarea>
+          <input type="submit" value="submit" />
+        </div>
+      </form>
+    </footer>
   </body>
 </html>
